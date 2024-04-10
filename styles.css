@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+*{
+	padding: 0;
+	margin: 0;
+/*	margin-right: -5px ;*/
+}
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+/*header section*/
+
+header{
+	padding: 70px;
+	background-color: hsl(193, 100%, 96%);
+	background-image: url(images/bg-hero-desktop.svg);
+	height: 85vh;
+	font-weight: 800;
+}
+header .logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+header .logo div > a{
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	background-color: #ffffff ;
+	padding: 15px 80px;
+	border-radius: 35px;
+	box-shadow:  0 0  10px hsl(192, 70%, 90%) ;
+	display: inline-block;
+}
+
+header .logo div > a:hover{
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+
+header .intro-sec{
+	display: flex;
+	padding-top: 20px;
+}
+
+header .intro-sec .intro-text > h1{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 55px;
+}
+
+
+header .intro-sec .intro-text > p{
+	font-weight: lighter;
+	font-size: 18px;
+	padding-bottom: 40px;
+}
+
+header .intro-sec .intro-text > a{
+	color: white;
+	background-color: hsl(322, 100%, 66%, 1.0);
+	text-decoration: none;
+	padding: 22px 90px;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+header .intro-sec .intro-text > a:hover{
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+header .intro-sec .intro-text{
+	padding-top: 12vh ;
+	padding-right:50px;
+ 	font-weight: 600;
+ 	font-style: normal;
+}
+
+header .intro-sec img{
+/*	width: 120%;*/
+	height: 70vh;
+}
+
+/*main section*/
+main{
+	width: 100%;
+/*	background-color: red;*/
+	padding-top: 15vh;
+	padding-bottom: 30vh ;
+
+}
+
+main section{
+	
+	width: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto;
+	padding-bottom 	: 50px;
+	box-shadow: 0 0  10px hsl(192, 70%, 90%);
+	border-radius: 20px;
+}
+
+
+main img{
+	height: 50vh;
+	padding-top: 25px;
+}
+
+main div h2{
+   font-size: 30px;
+   margin-bottom: -10px;
+   padding-bottom: 0;
+   font-weight: 700;
+}
+main div  p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	font-style: normal;
+
+}
+
+main .grow{
+   width: 40%;
+   padding-right: 150px;
+   padding-left: 150px;
+}
+
+main .flowing-conversations img{
+/*	background-color: red;*/
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+/*	aside section*/
+
+aside{
+	width: 100%;
+}
+
+.aside-page{
+   width: 30%;
+   height: 18vh;
+   background-color: white;
+   text-align: center;
+   align-items: center;
+   position: absolute;
+   margin: -140px 500px 0px 600px;
+   padding: 30px ;
+   border-radius: 10px;
+   box-shadow:0 -5px 10px hsl(192, 70%, 90%);
+  }
+
+.aside-page h2{
+	font-weight: 1300;
+	padding-bottom: 5px;
+	font-size: 30px;
+}
+
+.aside-page a{
+	background-color: hsl(322, 100%, 66%, 1.0);
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 25px 120px;
+	border-radius: 50px;
+	display: inline-block;
+}
+
+.aside-page a:hover{
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+
+	/*the footer section*/
+
+footer{
+	background-color: hsl(192, 100%, 9%);
+	height: 50vh;
+	width: auto;
+	color: white;
+	margin-left: -10px;
+	padding-right: 60px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top:20vh ;
+}
+footer .info > img{
+	color: white;
+	background-color: white;
+}
+footer .info{
+	width: 30%;
+}
+
+footer a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-bottom: 15px;
+}
+
+footer .info i{
+	margin-left:-40px ;
+	padding-right: 30px;
+}
+
+footer .icon i{
+	padding-right: 10px;
+}
+.copyright{
+/*	background-color: white;*/
+	margin-top: 400px;
+	margin-left: -300px;
+
+}
+
+@media screen and (max-width:375px) {
+
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	header{
+	padding: 70px;
+	background-image: url(images/bg-hero-mobile.svg);
+	height: 100%;
+	width: 850px;
+	}
+
+ 	header .intro-sec{
+	display: block;
+	padding-top: 20px;
+	padding-left: 40px;
+	text-align: center;
+	}
+
+	header .intro-sec img{
+	height: 50vh;
+	padding-top: 50px;
+}
+
+	main{
+		padding-bottom: 50vh;
+	}
+
+	main section{
+	width: 800px;
+	display: flex;
+	flex-direction: column-reverse;
+	height: 90vh;
+	text-align: center;
+	margin:  20px 120px 20px 120px;
+}
+
+
+main img{
+	padding-bottom: 30px;
+	height: 50vh;
+	padding-top: -40px;
+}
+
+main div h2{
+   font-size: 30px;
+   padding-bottom: 20px;
+   font-weight: bold;
+
+}
+main .flowing-conversations{
+	display: flex;
+	flex-direction: column;
+}
+.aside-page{
+   width: 750px;
+   height: 30vh;
+   background-color: white;
+   margin: -120px 100px 0px 100px;
+   padding-top: 30px ;
+   border-radius: 10px;
+   box-shadow:0 -5px 10px hsl(192, 70%, 90%);
+}
+
+	.aside-page h2{
+	font-weight: 1,300;
+	padding-bottom: 50px;
+	font-size: 40px;
+}
+
+	.aside-page a{
+	background-color: hsl(322, 100%, 66%, 1.0);
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 30px 120px;
+	border-radius: 50px;
+	margin-left: -230px;
+	margin-top: 10px;
+}
+	footer{
+	background-color: hsl(192, 100%, 9%);
+	height: 110vh;
+	width: 28em;
+	font-size: 30px;
+	color: white;
+	margin-left: -10px;
+	padding-left: 100px;
+	display: block;
+	padding-top:50vh ;
+}
+
+	footer .info{
+	width: 100%;
+	padding-bottom: 50px;
+	}
+
+	footer .info p{
+		padding-bottom: 20px;
+	}
+	footer .icon{
+		margin: 20px 250px 20px 250px;
+/**/
+	}
+	footer .icon i{
+		padding-left: 20px;
+	}
+
+	.copyright{
+		margin: 0 100px;
+		
+	}
+}
